@@ -1,4 +1,9 @@
-
+ThunkableWebviewerExtension.receiveMessage(function(message) {
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "20px Arial";
+ctx.fillText(message, 10, 50);
+});
 
 window.onload = function() {
   var c = document.getElementById("myCanvas");
