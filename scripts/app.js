@@ -1,8 +1,10 @@
+let i = 10;
 ThunkableWebviewerExtension.receiveMessage(function(message) {
+  i=i+50;
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ctx.font = "20px Arial";
-ctx.fillText(message, 10, 50);
+ctx.fillText(message, i, 50);
 });
 
 window.onload = function() {
