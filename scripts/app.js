@@ -57,5 +57,7 @@ ThunkableWebviewerExtension.receiveMessage(function(message) {
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ctx.font = "20px Arial";
-ctx.fillText(message, i, 50);
+ctx.fillText(message, 10, 50);
+  alert(message)
+  
 });
