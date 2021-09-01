@@ -1,12 +1,7 @@
 let i = 10;
 
 
-window.onload = function() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("scream");
-  ctx.drawImage(img, 10, 10);
-}
+
 
 var ThunkableWebviewerExtension = (function () {
   const postMessageToWebview = (message) => {
@@ -56,8 +51,14 @@ ThunkableWebviewerExtension.receiveMessage(function(message) {
   i=i+50;
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-ctx.font = "20px Arial";
-ctx.fillText(message, 10, 50);
-  alert(message)
-  
+ctx.fillStyle = "#FF0000";
+ ctx.shadowColor = 'red';
+ctx.shadowBlur = 15;   
+ctx.beginPath();
+ctx.moveTo(20, 20);
+ctx.lineWidth = 15;
+ctx.lineCap = 'round';
+ctx.lineTo(100, message);
+ctx.stroke();
+
 });
