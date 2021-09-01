@@ -57,7 +57,8 @@ ctx.shadowBlur = 15;
 ctx.moveTo(20, 20);
 ctx.lineWidth = 15;
 ctx.lineCap = 'round';
-ctx.lineTo(100,20* message);
+   var b = parseInt(message);
+ctx.lineTo(100,20* b);
 ctx.stroke();
 
 });
