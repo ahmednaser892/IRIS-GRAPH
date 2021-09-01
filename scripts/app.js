@@ -59,7 +59,7 @@ ctx.moveTo(20, 20);
 ctx.lineWidth = 15;
 ctx.lineCap = 'round';
    var b = parseInt(message2);
-ctx.lineTo(100,20);
+ctx.lineTo(100,2*b);
 ctx.stroke();
   alert(message)
 
