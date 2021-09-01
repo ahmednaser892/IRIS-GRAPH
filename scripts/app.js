@@ -48,6 +48,7 @@ var ThunkableWebviewerExtension = (function () {
   };
 })();
 ThunkableWebviewerExtension.receiveMessage(function(message) {
+var message2=message;
   i=i+50;
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -57,7 +58,7 @@ ctx.shadowBlur = 15;
 ctx.moveTo(20, 20);
 ctx.lineWidth = 15;
 ctx.lineCap = 'round';
-   var b = parseInt(message);
+   var b = parseInt(message2);
 ctx.lineTo(100,20* b);
 ctx.stroke();
 
