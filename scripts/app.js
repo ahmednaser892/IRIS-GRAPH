@@ -54,11 +54,10 @@ var ctx = canvas.getContext("2d");
 ctx.fillStyle = "#FF0000";
  ctx.shadowColor = 'red';
 ctx.shadowBlur = 15;   
-ctx.beginPath();
 ctx.moveTo(20, 20);
 ctx.lineWidth = 15;
 ctx.lineCap = 'round';
-ctx.lineTo(100, message);
+ctx.lineTo(100,20* message);
 ctx.stroke();
 
 });
