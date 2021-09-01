@@ -61,5 +61,6 @@ ctx.lineCap = 'round';
    var b = parseInt(message2);
 ctx.lineTo(100,20);
 ctx.stroke();
+  alert(message)
 
 });
